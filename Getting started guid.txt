@@ -1,0 +1,51 @@
+#To create the react app:
+npx create-react-app fb-messanger-clone-reactjs
+
+#To host your site with Firebase Hosting, you need the Firebase CLI 
+npm install -g firebase-tools
+
+#Deploy to Firebase Hosting
+#Sign in to Google
+firebase login
+
+#Initiate your project
+#Run this command from your app’s root directory:
+firebase init
+
+#When you’re ready, deploy your web app
+#Put your static files (e.g., HTML, CSS, JS) in your app’s deploy directory (the default is “public”). Then, run this command from your app’s root directory:
+firebase deploy
+
+#To install material ui, and style front-end
+npm install @material-ui/core
+#Ref:
+https://material-ui.com/
+
+# Install ES7 React/Redux/GraphQL/React-Native snippets extention for VS code editor
+rfce --> Shortcut to autogenerate component to reuse.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C:\Users\M1039158\AppData\Roaming\npm
+
+
+
+
+
+
+
+
