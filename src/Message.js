@@ -1,24 +1,29 @@
-import React from 'react';
+import React, { forwardRef }  from 'react';
 import { Card, CardContent, Typography} from '@material-ui/core';
 import './Message.css';
 
-function Message(message, username) {
-    const isUser = username ===message.username;
+const Message = forwardRef((props,ref) => {
+    const isUser = props.username === props.message.username;
     
-    console.log("user: "+message.username+" "+username.log);
-    console.log("text: "+message.text);
+    //console.log("user2: "+props.message.username);
+    //console.log("JSON: "+ JSON.stringify(props.username));
+    //console.log("user3: "+props.username);
+    //console.log("isUser: "+props.message.message);
+
     return (
-        <div className={ `message_card ${isUser && 'message_user'}` }>
+        //if isUser true,then show this div. And using ternary opr to style based isUser.
+        <div ref= {ref} className={ `message_card ${isUser && 'message_user'}` }>  
             
-             <Card className={isUser ? 'message_userCard' : 'message_guestCard'}>
+             <Card className={isUser ? 'message__userCard' : 'message__guestCard'}> 
                 <CardContent>
                     <Typography color="white" variant="h5" component="h2">
-                    {message.username}: {message.text}
+                        {/* Don't show the username of the current user */}
+                        { !isUser && `${props.message.username || 'Anonymous User'}: `} {props.message.message}
                     </Typography>
                 </CardContent>
             </Card>
         </div>
     )
-}
+})
 
 export default Message

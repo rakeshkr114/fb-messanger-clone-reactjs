@@ -25,24 +25,27 @@ https://material-ui.com/
 rfce --> Shortcut to autogenerate component to reuse.
 
 
+// using react-flip-move for animations, link: https://github.com/joshwcomeau/react-flip-move
+npm i -S react-flip-move
+
+// To get cool icons from @material-ui/icons
+npm i @material-ui/icons
 
 
 
+//Deploy:
+firebase init
+// Select Hosting!
+//What do you want to use as your public directory?
+build
+//Configure as a single-page app (rewrite all urls to /index.html)?
+yes
 
+npm run build
 
+firebase deploy
 
-
-
-
-
-
-
-
-
-
-C:\Users\M1039158\AppData\Roaming\npm
-
-
+!Done
 
 
 
