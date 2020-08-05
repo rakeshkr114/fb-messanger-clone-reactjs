@@ -1,0 +1,21 @@
+.message_card{
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+
+.message_user{
+    margin-left: auto;
+    color: white;
+    text-align: left !important ;
+}
+
+.message__guestCard{    /*BEM naming convention: component__element" */
+    
+    background-color: white !important;
+}
+
+.message__userCard{
+    background-color: rgb(22, 133, 238) !important;
+}
+
